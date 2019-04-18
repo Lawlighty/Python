@@ -60,7 +60,7 @@ def getMovieInfo(html):
 
 #写入数据库
 def insertInDB(info):
-    db = pymysql.connect('localhost', 'root', 'rootroot', 'pythonsql')
+    db = pymysql.connect('localhost', 'xxx', 'xxxx', 'pythonsql')
     cursor = db.cursor()
     sql = 'insert into doubanm(title, type, rating, cover_url) values (\"%s\", \"%s\" ,\"%s\", \"%s\")'
     try:
