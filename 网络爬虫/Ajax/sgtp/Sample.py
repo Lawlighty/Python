@@ -35,6 +35,13 @@ def create_file(name):
         os.makedirs(name)
 
 
+#判断是否为图片拓展名
+def ifPic(pname):
+    ex = re.compile("\.(jpg|jpeg|png|bmp|BMP|JPG|PNG|JPEG)$")
+    if not re.search(ex,pname):
+        pname=pname+'.jpg'
+    return pname
+
 def downLoad(fileName, html):
     try:
         create_file('pic/{}'.format(fileName))
@@ -45,6 +52,7 @@ def downLoad(fileName, html):
             # title = title.split('/')[-1]
             pic_url = item.get('pic_url')
             title = pic_url.split('/')[-1]
+            title = ifPic(title)
             new_url =pic_url[:4]+pic_url[5:]
             pic = requests.get(new_url)
 
