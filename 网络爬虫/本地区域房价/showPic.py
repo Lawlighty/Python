@@ -33,12 +33,23 @@ xinchangprice = MyMean(xinchangData)
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus'] =False
 
+def autoLabel(rects):
+    for rect in rects:
+        height = rect.get_height()
+        plt.text(rect.get_x(), 1.01*height, '%s'%float(height),fontsize=9)
+
 xlabel = ['越城','柯桥','镜湖','滨海','袍江','诸暨','上虞','嵊州','新昌']
 ylabel = [yuecprice, keqiaoprice, jinhuprice, binhaiprice, paojiangprice, zhujiprice, shangyuprice, shengzhouprice, xinchangprice ]
-plt.bar(xlabel, ylabel, color='cmyrgb')
+rect = plt.bar(xlabel, ylabel, color='cmyrgb')
 # color='c' 'm' 'y' 'k' 'r' 'g' 'b','tan','sage'
 plt.xlabel('区域')
 plt.ylabel('价格 元/M2')
 plt.title('绍兴市 二手房 价格', fontsize=16)
-plt.axis([-1,9,10000,15000])
+# plt.axis([-inf,inf,10000,15000])
+#单独设置某个坐标轴的范围
+plt.ylim([12000,15000])
+
+plt.legend((rect),('越城','柯桥','镜湖','滨海','袍江','诸暨','上虞','嵊州','新昌'))
+autoLabel(rect)
 plt.show()
+
