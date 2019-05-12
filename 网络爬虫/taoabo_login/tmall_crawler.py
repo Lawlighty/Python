@@ -189,8 +189,8 @@ if __name__ == "__main__":
     # 使用之前请先查看当前目录下的使用说明文件README.MD
 
     chromedriver_path = r'C:\Users\Administrator\AppData\Local\Programs\Python\Python37\chromedriver.exe'  #改成你的chromedriver的完整路径地址
-    weibo_username = "13616859570" #改成你的微博账号
-    weibo_password = "liyixin123" #改成你的微博密码
+    weibo_username = "用户名" #改成你的微博账号
+    weibo_password = "密码" #改成你的微博密码
 
     a = taobao_infos()
     a.login() #登录
