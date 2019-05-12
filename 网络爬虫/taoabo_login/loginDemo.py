@@ -61,6 +61,6 @@ def login(username, password):
     print('your name :',name)
 
 if __name__ == '__main__':
-    username = "13616859570"
-    password = 'liyixin123'
+    username = "用户名"
+    password = '密码'
     login(username, password)
