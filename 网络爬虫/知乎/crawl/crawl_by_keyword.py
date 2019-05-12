@@ -44,10 +44,10 @@ class zhihu_keyword:
         #进入微博账号登录知乎
 
         weibo_username = self.driver.find_element_by_id('userId')
-        weibo_username.send_keys('13616859570')
+        weibo_username.send_keys('用户名')
         time.sleep(3)
         weibo_psw = self.driver.find_element_by_id('passwd')
-        weibo_psw.send_keys('liyixin123')
+        weibo_psw.send_keys('密码')
         time.sleep(3)
 
         dl_btn = self.driver.find_element_by_css_selector(".WB_btn_login.formbtn_01")
