@@ -1,0 +1,195 @@
+Sean_Yang 发表博客:selenium	url:https://www.cnblogs.com/Yang-Sen/p/10878925.html
+描述:
+	
+                        一、介绍 二、安装 #selenium:3.12.0 #webdriver:2.38 #chrome.exe: 65.0.3325.181（正式版本） （32 位） from selenium import webdriver from selenium.webdriver.chrome.optio
+                    
+
+
+Sean_Yang 发表博客:Python-拼接所有微信好友头像	url:https://www.cnblogs.com/Yang-Sen/p/10875092.html
+描述:
+	
+                        
+                    
+
+
+Sean_Yang 发表博客:requests	url:https://www.cnblogs.com/Yang-Sen/p/10874676.html
+描述:
+	
+                        一、requests库介绍 Python内置为我们提供了一个内置的模块叫urllib，是用于访问网络资源的，但是由于它内部缺少一些实用的功能，所以用起来比较麻烦。后来出现了一个第三方模块叫 "Requests"，Requests 继承了urllib2的所有特性。Requests支持HTTP连接保持和
+                    
+
+
+Sean_Yang 发表博客:Python-微信机器人	url:https://www.cnblogs.com/Yang-Sen/p/10874375.html
+描述:
+	
+                        一、简介 wxpy基于itchat，使用了 Web 微信的通讯协议，，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。实现了微信登录、收发消息、搜索好友、数据统计等功能。总而言之，可用来实现各种微信个人号的自动化操作。 https://wxpy.readthedocs.io/zh/late
+                    
+
+
+Sean_Yang 发表博客:爬虫基本介绍	url:https://www.cnblogs.com/Yang-Sen/p/10873822.html
+描述:
+	
+                        1、什么是爬虫 二 爬虫的基本流程 三 请求与响应 四 Request Cookie ``` Cookie: "......" 同样是一个比较关键的字段，Cookie是 client 请求 服务器时，服务器会返回一个键值对样的数据给浏览器，下一次浏览器再访问这个域名下的网页时，就需要携带这些键值对数
+                    
+
+
+Sean_Yang 发表博客:Python爬虫（2）-爬取京东商品	url:https://www.cnblogs.com/Yang-Sen/p/10868560.html
+描述:
+	
+                        
+                    
+
+
+Sean_Yang 发表博客:Python爬虫（1）-中国大学排名	url:https://www.cnblogs.com/Yang-Sen/p/10868545.html
+描述:
+	
+                        
+                    
+
+
+Sean_Yang 发表博客:Python爬虫（1）-中国大学排名	url:https://www.cnblogs.com/Yang-Sen/p/10868545.html
+描述:
+	
+                        #!/usr/bin/env python# coding: utf-8import bs4 import requests from bs4 import BeautifulSoup # 通过传入网址信息创建一个获取网页文本的函数def getHTMLText(url):# 判断获取网页文本过程中
+                    
+
+
+Sean_Yang 发表博客:CSS	url:https://www.cnblogs.com/Yang-Sen/p/9090453.html#4246328
+描述:
+	
+                        111
+                    
+
+
+Sean_Yang 发表博客:python开发（老）	url:https://www.cnblogs.com/Yang-Sen/p/10732316.html
+描述:
+	
+                        一、计算机基础： 0、计算机基础 二、Python： 基础： 1、Python基础 2、基本数据类型 3、字符编码、文件处理 4、函数基础 5、函数嵌套，名称空间，作用域，函数对象，闭包函数 6、装饰器 7、函数之迭代器，生成器，面向过程编程 8、函数之三元表达式，递归，匿名函数，内置函数 9、py
+                    
+
+
+Sean_Yang 发表博客:金融量化分析介绍	url:https://www.cnblogs.com/Yang-Sen/p/10687122.html
+描述:
+	
+                        金融量化分析介绍 1、什么是金融量化分析 2、金融量化分析可以干什么 3、为什么将python运用于金融 4、常用库简介 1、什么是金融量化分析 2、金融量化分析可以干什么 3、为什么将python运用于金融 1、什么是金融量化分析 从标题中我们可以简单的分析一下这个题目中的关键词，金融、量化、分析
+                    
+
+
+Sean_Yang 发表博客:算法基础	url:https://www.cnblogs.com/Yang-Sen/p/9556272.html#4168369
+描述:
+	
+                        111
+                    
+
+
+Sean_Yang 发表博客:测试	url:https://www.cnblogs.com/Yang-Sen/p/10254833.html
+描述:
+	
+                        
+                    
+
+
+Sean_Yang 发表博客:mysql的常用引擎	url:https://www.cnblogs.com/xiaohaillong/p/6079551.html#4060153
+描述:
+	
+                        
+
+
+Sean_Yang 发表博客:算法基础	url:https://www.cnblogs.com/Yang-Sen/p/9556272.html
+描述:
+	
+                        在学习算法之前引用一位大佬的话：如果你只是想成为一个码农或是一个代码搬运工（Code Monkey），你大可不必学习算法，因为算法对你确实没有用；但是如果你想要成为一个优秀的开发者（Developer），扎实的算法必不可少，因为你会不断掉进一些只能借助算法才能爬出去的坑里。 算法定义 算法是指解题方
+                    
+
+
+Sean_Yang 发表博客:Django中ORM介绍和字段	url:https://www.cnblogs.com/taostaryu/p/9204093.html#4015467
+描述:
+	
+                        DSB
+                    
+
+
+Sean_Yang 发表博客:Django之认证系统auth	url:https://www.cnblogs.com/Yang-Sen/p/9243978.html#4015372
+描述:
+	
+                        3
+                    
+
+
+Sean_Yang 发表博客:Django之认证系统auth	url:https://www.cnblogs.com/Yang-Sen/p/9243978.html#4015367
+描述:
+	
+                        2
+                    
+
+
+Sean_Yang 发表博客:Django之认证系统auth	url:https://www.cnblogs.com/Yang-Sen/p/9243978.html#4015322
+描述:
+	
+                        1
+                    
+
+
+Sean_Yang 发表博客:Django之认证系统auth	url:https://www.cnblogs.com/Yang-Sen/p/9243978.html#4015306
+描述:
+	
+                        测试
+                    
+
+
+Sean_Yang 发表博客:内置函数(sorted、map、enumerate、filter、reduce)	url:https://www.cnblogs.com/Yang-Sen/p/9147625.html
+描述:
+	
+                        1、sorted() 语法： 把iterable中的items进行排序之后，返回一个新的列表，原来的iterable没有任何改变 1、iterable：iteralbe指的是一个可迭代类型。iterable主要包括3类： 第一类是所有的序列类型，比如list(列表)、str(字符串)、tuple(元
+                    
+
+
+Sean_Yang 发表博客:global与nonlocal关键字	url:https://www.cnblogs.com/Yang-Sen/p/9135582.html
+描述:
+	
+                        在Python中，当引用一个变量的时候，对这个变量的搜索是按找本地作用域(Local)、嵌套作用域(Enclosing function locals)、全局作用域(Global)、内置作用域(builtins模块)的顺序来进行的，即所谓的LEGB规则。 然而当在一个函数内部为一个变量赋值时，并不是
+                    
+
+
+Sean_Yang 发表博客:global与nonlocal关键字	url:https://www.cnblogs.com/Yang-Sen/p/9135582.html
+描述:
+	
+                        在Python中，当引用一个变量的时候，对这个变量的搜索是按找本地作用域(Local)、嵌套作用域(Enclosing function locals)、全局作用域(Global)、内置作用域(builtins模块)的顺序来进行的，即所谓的LEGB规则。 然而当在一个函数内部为一个变量赋值时，并不是
+                    
+
+
+Sean_Yang 发表博客:CSS之属性	url:https://www.cnblogs.com/Yang-Sen/p/9100405.html
+描述:
+	
+                        一、字体属性 1、字体大小 2、字体粗细 font-weight是用来设置字体的粗细的 3、字体颜色 color：red; 大多数颜色都有对应的英文单词描述，但英文单词终究有其局限性:无法表示所有颜色 什么是三原色？red，green，blue什么是像素px？对于光学显示器，一整个屏幕是有一个个点组
+                    
+
+
+Sean_Yang 发表博客:css之选择器	url:https://www.cnblogs.com/Yang-Sen/p/9090453.html
+描述:
+	
+                        什么是CSS CSS（Cascading Style Sheet，层叠样式表)定义如何显示HTML元素。 当浏览器读到一个样式表，它就会按照这个样式表来对文档进行格式化（渲染）。 CSS引入方式 行内样式 行内样式是将css样式设置在标记的style当中。但是此种方式不推荐大规模使用。 内部样式 嵌
+                    
+
+
+Sean_Yang 发表博客:body内常用标签	url:https://www.cnblogs.com/Yang-Sen/p/9086737.html
+描述:
+	
+                        一、HTML语义化 body中的标签是会显示到浏览器窗口中的，body内的标签只有一个作用就是用来标记语义的，语义指的是从字面意思就可以理解被标记的内容是用来做什么的 虽然不同的标签会有不同的显示样式，但我们一定要强制自己忘记所有标签的显示样式，只记它的语义。因为每个标签的样式各不相同，记忆不同标签
+                    
+
+
+Sean_Yang 发表博客:head内常用标签	url:https://www.cnblogs.com/Yang-Sen/p/9085347.html
+描述:
+	
+                        一 head内常用标签 1、meta相关 2、非meta标签
+                    
+
+
+Sean_Yang 发表博客:HTML协议	url:https://www.cnblogs.com/Yang-Sen/p/9076804.html
+描述:
+	
+                        一丶HTML协议简介 1、什么是互联网 互联网=物理连接介质+互联网协议 2、互联网建立的目的？ 数据传输打破地域限制，否则的话，我想获得对方主机上的数据，只能拿着硬盘去对方主机拷贝 3、什么是上网？ 用户上网的过程即浏览器向服务端发送请求，然后将服务端主机的文本文件下载到本地显示的过程。而浏览器与
+                    
+
+
