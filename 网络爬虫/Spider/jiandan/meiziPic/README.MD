@@ -12,7 +12,7 @@ demo.py是草稿箱
 
             myItem['img_urls'] = mylist
             
-  <p>.lis = doc.xpath('//div/ul/li[not(@class="cc" or @class="dd")]/text()')的xpath方法可以爬取li标签中class属性不是cc或者dd
+  <p>2.lis = doc.xpath('//div/ul/li[not(@class="cc" or @class="dd")]/text()')的xpath方法可以爬取li标签中class属性不是cc或者dd
 虽然这里不需要
 
  <p> 3.settings.IMAGES_STORE 的使用需要在settings.py 添加IMAGES_STORE=r'C:'路径
