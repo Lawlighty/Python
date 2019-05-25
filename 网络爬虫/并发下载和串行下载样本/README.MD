@@ -17,3 +17,24 @@
       
       while not workQueue.empty():
         pass
+        
+5.多进程的创建
+
+from multiprocessing import Pool,Process
+
+def  fun():
+      pass
+      
+ p = Pool()<br>
+方法1:apply():<br>
+
+
+      for i in range(5):
+            p.apply_async(fun, args=())
+      p.close()
+      p.join()
+ 
+ 方法2:map()<br>
+ 
+      p.map(fun, list)
+      
