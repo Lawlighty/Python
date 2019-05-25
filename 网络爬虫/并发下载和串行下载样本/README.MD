@@ -37,4 +37,9 @@ def  fun():
  方法2:map()<br>
  
       p.map(fun, list)
+ 
+ 方法3:Process
+ 
+      for i in range(4):
+        Process(target=fun, args=()).start()
       
