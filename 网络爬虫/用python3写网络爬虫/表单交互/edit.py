@@ -3,31 +3,6 @@ import requests
 from lxml import etree
 
 # 目标 url = 'http://example.python-scraping.com/places/default/edit/Afghanistan-1'
-def login(login_url, url):
-    session = requests.Session()
-    data = {}
-    html = session.get(login_url)
-    cookie = html.cookies
-    doc = etree.HTML(str(html.content))
-    for i in doc.xpath('//form//input'):
-        if i.get('name'):
-            data[i.get('name')] = i.get('value')
-
-    data['email'] = '123456@163.com'
-    data['password'] = '123456abc'
-    #登录
-    session.post(login_url, data=data, cookies=cookie)
-    #编辑页面
-    resp = session.get(url)
-    data = {
-
-    }
-    doc = etree.HTML(str(resp.content))
-    for i in doc.xpath('//form//input'):
-        if i.get('name'):
-            data[i.get('name')] = i.get('value')
-    # print(resp.text)
-    print(data)
 
 def myLogin(login_url, session=None):
     if session is None:
