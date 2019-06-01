@@ -26,3 +26,7 @@
       cookie = request.get(url).cookies
   
   c: 使用request的post()方法                   
+
+
+### edit.py  登陆后修改网页表单数据提交 (session)
+
