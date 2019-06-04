@@ -12,6 +12,6 @@
           errors = etree.HTML(str(resp.text)).xpath('//div[@class="error"]')
           print('Form Error:')
           print('\n'.join('{}:{}'.format(e.get('id'),e.text) for e in errors))
-      else:
+        else:
           print('注册成功 emial--{},password--{}'.format(e_mail,password))
 
