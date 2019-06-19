@@ -20,3 +20,6 @@ size属性同样返回一个字典，
     
     
 这个就比较好理解，既图片对象的高度，宽度
+
+
+### 注 location 的键为 x,y       size 的键为 width,height
