@@ -66,7 +66,7 @@ class GrackGeettest():
         print('验证码位置',top, bottom, left, right)
         screenshot = self.get_screenshot()
         screenshot.save(name)
-        captcha = screenshot.crop((top, bottom, left, right))#剪裁
+        captcha = screenshot.crop((left, top, right, bottom))#剪裁   左上右下的顺序
         return captcha
 
     def get_slider(self):
