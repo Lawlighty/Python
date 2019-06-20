@@ -11,10 +11,10 @@ sys.path.append(r'C:\Users\Administrator\Desktop\python\Py_webSpider\Python3WebC
 from chaojiying import Chaojiying_Client
 
 
-USERNAME = 'sunlys'
-PASSWORD = 'lys13788929721'
-CHAOJIYING_USER = '13616859570'
-CHAOJIYING_PSW = 'liyixin123'
+USERNAME = ''
+PASSWORD = ''
+CHAOJIYING_USER = '1'
+CHAOJIYING_PSW = 'l'
 CHAOJIYING_SOFT_ID = 900078
 CHAOJIYING_KIND = 9102
 
