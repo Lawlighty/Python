@@ -13,10 +13,10 @@ import sys
 sys.path.append(r'C:\Users\Administrator\Desktop\python\Py_webSpider\Python3WebCombat\验证码的识别\点触验证码的识别\Chaojiying_Python\chaojiying_Python')
 from chaojiying import Chaojiying_Client
 
-USERNAME = 'sunlys'
-PASSWORD = 'lys13788929721'
-CHAOJIYING_USER = '13616859570'
-CHAOJIYING_PSW = 'liyixin123'
+USERNAME = ''
+PASSWORD = ''
+CHAOJIYING_USER = ''
+CHAOJIYING_PSW = ''
 CHAOJIYING_SOFT_ID = 900078
 CHAOJIYING_KIND = 9102
 class Crack12306:
