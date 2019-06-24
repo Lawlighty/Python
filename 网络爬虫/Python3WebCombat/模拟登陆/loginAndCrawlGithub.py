@@ -1,6 +1,9 @@
 # 模拟登陆并爬取GitHub
 import requests
 from lxml import etree
+import re
+from pyquery import PyQuery as pq
+
 
 class Login():
     def __init__(self):
@@ -16,10 +19,10 @@ class Login():
         self.session = requests.Session()
 
     def get_authtoken(self):
-        session = requests.Session()
-        resp = session.get(self.login_url, headers=self.headers).text
+        resp = self.session.get(self.login_url, headers=self.headers).text
         doc = etree.HTML(str(resp))
         authenticity_token = doc.xpath('//*[@id="login"]/form/input[2]/@value')[0]
+        print('authenticity_token',authenticity_token)
         return authenticity_token
 
     def login(self,username, password):
@@ -33,25 +36,32 @@ class Login():
 
         }
         response = self.session.post(self.post_url, data=data, headers=self.headers)
-        resp = self.session.get(self.feed_url, headers=self.headers)
-        if resp.raise_for_status() == 200:
-            self.dynamics(response.text)#主页动态
+        if response.status_code ==200:
+            resp = self.session.get(self.feed_url, headers=self.headers)
+            if resp.status_code == 200:
+                self.dynamics(resp.text)#主页动态
+            else:
+                print('动态错误')
+                print(resp.status_code)
+            response = self.session.get(url=self.logined_url, data=data, headers=self.headers)
+            if response.status_code == 200:
+                self.profile(response.text)#个人信息页面
+            else:
+                print('主页错误')
+                print(response.status_code)
         else:
-            print('动态错误')
-        response = self.session.get(url=self.logined_url, data=data, headers=self.headers)
-        if response.raise_for_status() == 200:
-            self.profile(response.text)#个人信息页面
-        else:
-            print('主页错误')
-        # else:
-        #     print('Nothing')
+            print('表单错误')
+
 
     def dynamics(self, html):
-        doc = etree.HTML(str(html))
-        dynamcs =doc.xpath('//div[@class="d-flex flex-items-baseline"]')
-        for dynamc in dynamcs:
-            iiinfo = " ".join(dynamc.xpath('/div//text()'))
-            print(iiinfo)
+        selector = pq(html)
+        # print(selector.text())
+        dynamics = selector('div[class="d-flex flex-items-baseline"] div')
+        dynamics.find('span').remove()
+        # print(dynamics.text())
+        for item in dynamics.items():
+            dynamic = item.text().strip()
+            print(dynamic)
 
     def profile(self, html):
         doc = etree.HTML(str(html))
@@ -62,4 +72,4 @@ class Login():
 
 if __name__ == '__main__':
     mylogin = Login()
-    mylogin.login(username="",password="")
+    mylogin.login(username="Lawlighty",password="liyixin123")
