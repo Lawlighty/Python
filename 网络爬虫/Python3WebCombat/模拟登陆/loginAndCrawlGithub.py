@@ -72,4 +72,4 @@ class Login():
 
 if __name__ == '__main__':
     mylogin = Login()
-    mylogin.login(username="Lawlighty",password="liyixin123")
+    mylogin.login(username="",password="")
