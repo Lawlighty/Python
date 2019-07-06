@@ -25,8 +25,8 @@ class GitSpider(scrapy.Spider):
                       'commit': 'Sign in',
                       'utf8':'✓',
                       'authenticity_token':authenticity_token,
-                      'login':'Lawlighty',
-                      'password':'liyixin123',
+                      'login':'***',
+                      'password':'***',
                   },
                   callback=self.git_ok,
                   dont_filter=True
