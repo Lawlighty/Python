@@ -1,0 +1,12 @@
+2019-07-24 21:02:40 [scrapy.core.scraper] ERROR: Error processing {'detailURL': 'http://t1.hxzdhn.com/uploads/allimg/20150727/zzhzyubwplj.jpg',
+ 'fileName': 'F:\\python项目实例\\唯一图库\\PlanA\\myPics清纯校花美女室内俏皮可爱写真',
+ 'pageURL': 'http://www.mmonly.cc/mmtp/qcmn/639210.html',
+ 'path': 'F:\\python项目实例\\唯一图库\\PlanA\\myPics清纯校花美女室内俏皮可爱写真/10.jpg',
+ 'siteURL': 'http://www.mmonly.cc/mmtp/qcmn/6392.html',
+ 'title': '清纯校花美女室内俏皮可爱写真'}
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\python项目实例\唯一图库\PlanA\myS\myS\pipelines.py", line 16, in process_item
+    with open(path, 'wb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\python项目实例\\唯一图库\\PlanA\\myPics清纯校花美女室内俏皮可爱写真/10.jpg'
