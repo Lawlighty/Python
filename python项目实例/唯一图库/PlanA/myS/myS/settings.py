@@ -9,10 +9,10 @@ import datetime
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-# LOG_LEVEL = 'ERROR'
+LOG_LEVEL = 'ERROR'
 # # to_day = datetime.datetime.now()
 # # log_file_path = 'log/scrapy_{}_{}_{}.log'.format(to_day.year, to_day.month, to_day.day)
-# LOG_FILE = 'error.log'
+LOG_FILE = 'error.log'
 
 
 BOT_NAME = 'myS'
