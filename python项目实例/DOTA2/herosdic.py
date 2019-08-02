@@ -2,6 +2,7 @@
 herodic = {
     '冥魂大帝': 'skeleton_king',
     '骷髅王': 'skeleton_king',
+    'snk': 'skeleton_king',
 
     '孽主': 'abyssal_underlord',
     '大屁股': 'abyssal_underlord',

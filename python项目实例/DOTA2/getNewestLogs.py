@@ -22,7 +22,7 @@ def getHtmlText(url):
     }
     proxies = get_proxies()
     try:
-        r = requests.get(url, headers=headers, proxies=proxies)
+        r = requests.get(url, headers=headers, proxies=proxies, timeout=5)
         r.raise_for_status()
         # print('编码:',r.encoding)
         return r.text
@@ -119,14 +119,24 @@ def cleanLogsDir():
             shutil.rmtree(filepath, True)
     print('日志文件夹清空成功')
 
-
-
-if __name__ == '__main__':
+def main():
     cleanLogsDir()
     text = getHtmlText(url)
-    choice = input('>>是否以pdf格式保存更新日志?(t/f)').lower()
-    if choice == 't':
-        getNewestLogsPdf(text)
-    else:
-        for dic in getNewestLogsTxt(text):
-            intoTxt(dic)
+    while True:
+        choice = input('>>是否以pdf格式保存更新日志?(t/f)').lower()
+        if choice == 't':
+            getNewestLogsPdf(text)
+            print('pdf格式保存更新日志完成')
+            break
+
+        elif choice == 'f':
+            for dic in getNewestLogsTxt(text):
+                intoTxt(dic)
+            print('txt格式保存更新日志完成')
+            break
+        else:
+            print('输入错误')
+            continue
+
+if __name__ == '__main__':
+    main()
