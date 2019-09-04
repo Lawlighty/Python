@@ -50,7 +50,7 @@ class myC:
 if __name__ == '__main__':
 
     mc = myC()
-    mc.login_in('13616859570@163.com','liyixin123')
+    mc.login_in('1361@163.com','l123')
     text = mc.getHtmlText()
     sum = mc.getSum(text)
     print(sum)
