@@ -80,7 +80,7 @@ if __name__ == '__main__':
     ip_list = get_ip_from_DB.get_ip_list()
     Sum = 0
     mc = myC()
-    mc.login_in('13616859570@163.com', 'liyixin123')
+    mc.login_in('1361.com', 'l123')
     for i in tqdm.tqdm(range(1,1001)):
         url = 'http://glidedsky.com/level/web/crawler-ip-block-1?page={}'.format(i)
         text = mc.getHtmlText(url, ip_list)
