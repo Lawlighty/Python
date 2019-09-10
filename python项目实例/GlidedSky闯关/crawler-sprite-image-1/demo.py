@@ -2,6 +2,9 @@ import requests
 from lxml import etree
 import re
 import tqdm
+from get_image import getXiabiao
+import time
+import os
 
 class myC:
     def __init__(self):
@@ -43,28 +46,34 @@ class myC:
             print(e)
 
     def Pos(self, x, html):
-        num = None
+        num = 0
         pos = abs(int(re.search(r'' + x + ' { background-position-x:(.*?)px }', html).group(1)))
-        if pos < 7:
-            num = 0
-        elif pos < 20:
-            num = 1
-        elif pos < 34:
-            num = 2
-        elif pos < 47:
-            num = 3
-        elif pos < 50:
-            num = 4
-        elif pos < 73:
-            num = 5
-        elif pos < 86:
-            num = 6
-        elif pos < 97:
-            num = 7
-        elif pos < 113:
-            num = 8
-        else:
-            num = 9
+        # if pos < 7:
+        #     num = 0
+        # elif pos < 20:
+        #     num = 1
+        # elif pos < 34:
+        #     num = 2
+        # elif pos < 47:
+        #     num = 3
+        # elif pos < 60:
+        #     num = 4
+        # elif pos < 73:
+        #     num = 5
+        # elif pos < 86:
+        #     num = 6
+        # elif pos < 97:
+        #     num = 7
+        # elif pos < 106:
+        #     num = 8
+        # else:
+        #     num = 9
+        numdic = getXiabiao(html)
+        os.remove('b64_str.png')
+        for k, v in numdic.items():
+            if pos < v:
+                num = k
+                break
         return num
 
     def getListSum(self, nlist):
@@ -99,14 +108,29 @@ if __name__ == '__main__':
     Sum = 0
     mc = myC()
     mc.login_in('13616859570@163.com','liyixin123')
-    # url = 'http://glidedsky.com/level/web/crawler-sprite-image-1?page={}'.format(669)
+    # url = 'http://glidedsky.com/level/web/crawler-sprite-image-1?page={}'.format(1)
     # text = mc.getHtmlText(url)
     # sum = mc.getPageSum(text)
     # print(sum)
-    for i in tqdm.tqdm(range(1,1001)):
-        url = 'http://glidedsky.com/level/web/crawler-sprite-image-1?page={}'.format(i)
-        text = mc.getHtmlText(url)
-        sum = mc.getPageSum(text)
-        Sum+=sum
-    print(Sum)
+    # mmmlist = []
+    # for i in tqdm.tqdm(range(1,51)):
+    #     url = 'http://glidedsky.com/level/web/crawler-sprite-image-1?page={}'.format(i)
+    #     text = mc.getHtmlText(url)
+    #     sum = mc.getPageSum(text)
+    #     # mmmlist.append(sum)
+    #     Sum+=sum
+    #     # time.sleep(0.1)
+    # # print(len(mmmlist))
+    # print(Sum)
+    iSum = 0
+    for i in tqdm.tqdm(range(1,21)):
+        jSum = 0
+        for j in range((i-1)*50+1,i*50+1):
+            url = 'http://glidedsky.com/level/web/crawler-sprite-image-1?page={}'.format(i)
+            text = mc.getHtmlText(url)
+            sum = mc.getPageSum(text)
+            jSum+=sum
+        iSum+=jSum
+        time.sleep(1)
+    print(iSum)
 # 2696525
